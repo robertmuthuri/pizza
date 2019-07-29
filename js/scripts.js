@@ -5,11 +5,17 @@ $(function () {
 	// 	window.location = $(this).find("a").attr("href");
 	// 	return false;
 	// });
-	$(() => {
-		'use strict';
-		$("form-check-input").click(function() {
-			$(this).toggleClass('pressed');
-		});
+	$("input#option1").click(function () {
+		$("#small-size").toggle();
+		
 	});
+	$("input#option2").click(function () {
+		$("#large-size").toggle();
+	});
+	$("input#option3").click(function () {
+		$("#family-size").toggle();
+		
+	});
+	
 });
 

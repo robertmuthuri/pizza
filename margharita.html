@@ -45,25 +45,56 @@
 			
 			<!--Form-->
 			<form action="">
-				<h3>Size</h3>
-				<div class="btn-group btn-group-toggle" data-toggle="buttons">
-					<label class="btn btn-light form-check-label">
-						<input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off">
-						Small - 11"
-					</label>
-					<label class="btn btn-light form-check-label">
-						<input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off">
-						Large - 14"
-					</label>
-					<label class="btn btn-light form-check-label">
-						<input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off">
-						Family - 18"
-					</label>
+				<div>
+					<h3>Size</h3>
+					<div id="sizes" class="btn-group btn-group-toggle" data-toggle="buttons">
+						
+						<label id="small-label" class="btn btn-light form-check-label">
+							<input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" value="9">
+							Small - 11"
+						</label>
+						
+						<label id="large-label" class="btn btn-light form-check-label">
+							<input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off" value="11">
+							Large - 14"
+						</label>
+						<label id="family-label" class="btn btn-light form-check-label">
+							<input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off" value="13">
+							Family - 18"
+						</label>
+					</div>
+					<!-------------------------------Display size price---------------------------->
+					<p id="size-price"></p>
+				</div>
+				<!------------------------------------Toppings checkbox------------------------------------------------>
+				<div>
+					<div class="form-check" border="1">
+						<h3>Extra Toppings</h3>
+						<input type="checkbox" class="form-check-input" id="cheese">
+						<label for="cheese" class="form-check-label">Cheese ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="cheese">
+						<label for="cheese" class="form-check-label">Mozarella ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="cheese">
+						<label for="cheese" class="form-check-label">Mushroom ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="cheese">
+						<label for="cheese" class="form-check-label">Egg ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="cheese">
+						<label for="cheese" class="form-check-label">Bacon ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="cheese">
+						<label for="cheese" class="form-check-label">Turkey Fillet ($2.00)</label>
+					</div>
 				</div>
 			</form>
-			
-			
-			
 		</div>
 	</div>
 </body>
