@@ -7,3 +7,13 @@ nav {
 /*    cursor: pointer;*/
 
 /*}*/
+
+.form-check-input {
+    background-color: blue;
+    height: 100px;
+    width: 150px;
+}
+
+.form-check-input.pressed {
+    background-color: red;
+}
