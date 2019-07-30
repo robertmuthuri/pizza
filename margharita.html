@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <head>
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-	<!--	<link rel="stylesheet" href="css/mdb.css" type="text/css">-->
+	<link rel="stylesheet" href="css/mdb.css" type="text/css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	
 	<script src="js/jquery-3.4.1.js"></script>
@@ -44,9 +44,9 @@
 			<h4 class="card-title"><h2>How would you like Margharita Pizza</h2></h4>
 			
 			<!--Form-->
-			<form action="">
+			<form>
 				<div>
-					<h3>Size</h3>
+					<h4>Pick your Pizza size</h4>
 					<div id="sizes" class="btn-group btn-group-toggle" data-toggle="buttons">
 						
 						<label id="small-label" class="btn btn-light form-check-label">
@@ -64,12 +64,26 @@
 						</label>
 					</div>
 					<!-------------------------------Display size price---------------------------->
-					<p id="size-price"></p>
+				</div>
+				<div>
+					<h4 id="size-price" class="p-2"></h4>
+				</div>
+				<!------------------------------------Crust selection------------------------------------------------>
+				<div id="crusts" class="form-group">
+					<h4>Choose your crust</h4>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" class="custom-control-input" id="crust1" name="crust" value="option1">
+						<label class="custom-control-label" for="crust1">Thin crust</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" class="custom-control-input" id="crust2" name="crust" value="option2">
+						<label class="custom-control-label" for="crust2">Buttery crust</label>
+					</div>
 				</div>
 				<!------------------------------------Toppings checkbox------------------------------------------------>
-				<div>
-					<div class="form-check" border="1">
-						<h3>Extra Toppings</h3>
+				<div id="toppings" class="form-group-row">
+					<div class="form-check">
+						<h4>Extra Toppings</h4>
 						<input type="checkbox" class="form-check-input" id="cheese">
 						<label for="cheese" class="form-check-label">Cheese ($2.00)</label>
 					</div>

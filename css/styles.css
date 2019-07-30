@@ -9,8 +9,10 @@ nav {
 /*}*/
 
 
-#small-size,
-#large-size,
-#family-size {
+#size-price {
     display: none;
+}
+
+#toppings {
+    border: 2px black;
 }

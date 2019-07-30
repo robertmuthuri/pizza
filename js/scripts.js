@@ -1,20 +1,33 @@
-$(function () {
+//business logic
 
-	//make card clickable
-	// $(".margharita").click(function () {
-	// 	window.location = $(this).find("a").attr("href");
-	// 	return false;
-	// });
+
+//User interface logic
+$(function () {
+	
 	$("input#option1").click(function () {
-		$("#small-size").toggle();
+		$("#size-price").show();
+		// $("#size-price").toggle();
+		let price = "$" + $("input#option1").val();
+		console.log(price);
+		
+		$("#size-price").text(price);
+		// $("#size-price").toggle(price);
 		
 	});
 	$("input#option2").click(function () {
-		$("#large-size").toggle();
+		$("#size-price").show();
+		
+		let price = "$" + $("input#option2").val();
+		
+		$("#size-price").text(price);
+		
 	});
 	$("input#option3").click(function () {
-		$("#family-size").toggle();
+		$("#size-price").show();
 		
+		let price = "$" + $("input#option3").val();
+		
+		$("#size-price").text(price);
 	});
 	
 });
