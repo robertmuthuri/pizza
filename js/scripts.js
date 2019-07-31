@@ -1,6 +1,6 @@
 //business logic
 let blanks = ["cheese","mozzarella","mushroom","egg","bacon","turkey"];
-let totalToppings = 0;
+let sizePrice,totalToppings = 0;
 // function AddToppings();
 
 //Create pizza toppings object
@@ -16,33 +16,43 @@ function ToppingsPrices(cheese,mozzarella,mushroom,egg,bacon,turkey) {
 //instantiate the pricing object
 let margharitaToppingsPrices = new ToppingsPrices(2,2,2,2,2, 2);
 
+//Create pizza size prices
+function PizzaSizePrice(small,large,family) {
+	this.small = small;
+	this.large = large;
+	this.family = family;
+}
+//Create an instance of the size price
+let myPizzaSizePrice = new PizzaSizePrice(9,11,13);
+
 //User interface logic
 $(function () {
 	
 	$("input#option1").click(function () {
 		// $("#size-price").show();
 		// $("#size-price").toggle();
-		let price = "$" + $("input#option1").val();
-		console.log(price);
+		// let price = "$" + $("input#option1").val();
+		let sizePrice = "$" + myPizzaSizePrice.small;
+		console.log(sizePrice);
 		
-		$("#size-price").show().text(price);
+		$("#size-price").show().text(sizePrice);
 		// $("#size-price").toggle(price);
 		
 	});
 	$("input#option2").click(function () {
 		// $("#size-price").show();
 		
-		let price = "$" + $("input#option2").val();
-		
-		$("#size-price").show().text(price);
+		let sizePrice = "$" + myPizzaSizePrice.large;
+		console.log(sizePrice);
+		$("#size-price").show().text(sizePrice);
 		
 	});
 	$("input#option3").click(function () {
 		// $("#size-price").show();
 		
-		let price = "$" + $("input#option3").val();
-		
-		$("#size-price").show().text(price);
+		let sizePrice = "$" + myPizzaSizePrice.family;
+		console.log(sizePrice);
+		$("#size-price").show().text(sizePrice);
 	});
 	// blanks.forEach(function (blank) {
 	// 	let arr = parseInt($("#" + blank).val);
@@ -132,6 +142,8 @@ $(function () {
 			$("#toppings-price").show().text("$" + totalToppings);
 		}
 	});
+	
+	//Display final pizza price
 	
 	
 		// if ($("input#cheese").change(function () {
