@@ -9,9 +9,11 @@ nav {
 /*}*/
 
 
-#size-price {
+#size-price,
+#toppings-price {
     display: none;
 }
+
 
 #toppings {
     border: 2px black;
