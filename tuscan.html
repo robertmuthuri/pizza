@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/mdb.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/scripts.js"></script>
+	
+	<title>Tuscan Pizza</title>
+</head>
+<body>
+<!--Card decks for 1st 3 pizzas-------------------------------------------------------------------->
+<div class="card-deck">
+	<!--Card-->
+	<div class="card mb-4 col-sm border-0">
+		<img class="card-img-left width:100%" src="images/tuscan.jpg" alt="Tuscan Pizza">
+	</div>
+	
+	<!--Card------------------------------------------------------------------>
+	<div class="card mb-4 col-sm border-0">
+		
+		<div class="card-body">
+			
+			<!--Title-->
+			<h4 class="card-title"><h2>How would you like Tuscan Pizza</h2></h4>
+			
+			<!--Form-->
+			<form>
+				<div>
+					<h4>Pick your Pizza size</h4>
+					<div id="sizes" class="btn-group btn-group-toggle" data-toggle="buttons">
+						
+						<label id="small-label" class="btn btn-light form-check-label">
+							<input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" value="9">
+							Small - 11"
+						</label>
+						
+						<label id="large-label" class="btn btn-light form-check-label">
+							<input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off" value="11">
+							Large - 14"
+						</label>
+						<label id="family-label" class="btn btn-light form-check-label">
+							<input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off" value="13">
+							Family - 18"
+						</label>
+					</div>
+					<!-------------------------------Display size price---------------------------->
+				</div>
+				<div>
+					<h4 id="size-price" class="p-2"></h4>
+				</div>
+				<!------------------------------------Crust selection------------------------------------------------>
+				<div id="crusts" class="form-group p-3">
+					<h4>Choose your crust</h4>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" class="custom-control-input" id="crust1" name="crust" value="option1">
+						<label class="custom-control-label" for="crust1">Thin crust</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" class="custom-control-input" id="crust2" name="crust" value="option2">
+						<label class="custom-control-label" for="crust2">Buttery crust</label>
+					</div>
+				</div>
+				<!------------------------------------Toppings checkbox------------------------------------------------>
+				<div id="toppings" class="form-group-row">
+					<div class="form-check">
+						<h4>Extra Toppings</h4>
+						<input type="checkbox" class="form-check-input" id="cheese" value="2">
+						<label for="cheese" class="form-check-label">Cheese ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="mozzarella" value="2">
+						<label for="cheese" class="form-check-label">Mozzarella ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="mushroom" value="2">
+						<label for="cheese" class="form-check-label">Mushroom ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="egg" value="2">
+						<label for="cheese" class="form-check-label">Egg ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="bacon" value="2">
+						<label for="cheese" class="form-check-label">Bacon ($2.00)</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="turkey" value="2">
+						<label for="cheese" class="form-check-label">Turkey Fillet ($2.00)</label>
+					</div>
+				</div>
+				<div>
+					<h4 id="toppings-price" class="p-2"></h4>
+				</div>
+				<div>
+					<h3 class="p-3" ">Final price</h3>
+					<h4 id="final-price" class="p-2"></h4>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
