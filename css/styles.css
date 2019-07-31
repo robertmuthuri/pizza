@@ -18,3 +18,7 @@ nav {
 #toppings {
     border: 2px black;
 }
+
+#viewArea {
+    border: 6px;
+}
