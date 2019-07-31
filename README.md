@@ -17,7 +17,7 @@ This is a pizza ordering website that shows an overall 6 pizzas that can be orde
 * There is no way to add additional pizza orderings at the moment.
 
 ## Link to GitHub Pages
-
+https://robertmuthuri.github.io/pizza/
 
 ## Support and contact details
 If you would like to reach out regarding any issues you experience on the website, please get in touch at @robertmuthuri
